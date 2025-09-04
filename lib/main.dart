@@ -1,4 +1,6 @@
+import 'package:demo_app/src/features/home/Home.dart';
 import 'package:flutter/material.dart';
+import 'package:demo_app/src/core/routes/AppRouter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -6,6 +8,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  
 
   // This widget is the root of your application.
   @override
@@ -14,10 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        // Th
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const StackDemo(),
+      home: const Home(),
+      routes: AppRouter.routes,
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
