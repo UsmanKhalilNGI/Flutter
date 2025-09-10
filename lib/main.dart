@@ -1,6 +1,8 @@
+import 'package:demo_app/src/core/routes/AppRouter.dart';
 import 'package:demo_app/src/features/home/Home.dart';
 import 'package:flutter/material.dart';
 import 'package:demo_app/src/core/routes/AppRouter.dart';
+import 'package:demo_app/src/features/user/Registration.dart';
 
 void main() {
   runApp(const MyApp());

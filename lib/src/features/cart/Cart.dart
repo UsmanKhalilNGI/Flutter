@@ -62,8 +62,8 @@ class Cart extends StatelessWidget {
                         onPressed: () {
                           // Handle apply coupon action
                            print("Total after discount: ${_controller.text}");
-                           productRepository.applyDiscount(discount: double.tryParse(_controller.text) ?? 0.0);  
-                            totalAmount = productRepository.getTotalAmount();
+                           totalAmount = productRepository.applyDiscount(discount: double.tryParse(_controller.text) ?? 0.0);  
+                            // totalAmount = productRepository.getTotalAmount();
                             print("Total after discount: $totalAmount");
                             
                         },

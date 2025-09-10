@@ -41,10 +41,13 @@ double discountedTotal = 0.0;
   }
 
 double applyDiscount({double discount = 10.0}) {
+  // print("TOTAL before discount is $total & discount is $discount");
     //     for (var item in _products) {
     //       total += item.price;
     //     }
     //     print("Total us $total & discount is ${discount/100}");
-    return total = total - (total * (discount / 100));
+    total = total - (total * (discount / 100)); 
+      print("TOTAL before discount is $total & discount is $discount");
+    return total;
   }
 }

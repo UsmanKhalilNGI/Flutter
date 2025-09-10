@@ -6,5 +6,6 @@ class AppRouter {
 
   static final routes = <String, WidgetBuilder>{
     cart: (_) => const Cart(),
+
   };
 }
